@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _positivePoleUp = true;
+        GameManager.Instance.PlayerReference = gameObject;
     }
 
     private void Start()
