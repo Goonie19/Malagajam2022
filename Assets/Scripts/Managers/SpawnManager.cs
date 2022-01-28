@@ -8,9 +8,15 @@ public class SpawnManager : MonoBehaviour
     public List<GameObject> objectsToSpawn;
     public List<Transform> spawnPositions;
 
+    [Header("Speed")]
+    public float moveSpeed;
+
+    [Header("Edges")]
+    public float X_Edge;
+
+    [Header("Timers")]
     public float waitingTime; //Tiempo que espera antes de comenzar a spawnear
     public float timeBetweenSpawns; //Tiempo entre spawns
-    public GameObject _objSpawn; //Variable auxiliar
 
     private GameObject _obj;
     private Transform _pos;
@@ -26,6 +32,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (_startSpawning)
         {
+            MoveSpawner();
             _timer += Time.deltaTime;
             if(_timer >= timeBetweenSpawns)
             {
@@ -35,13 +42,23 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    private void MoveSpawner()
+    {
+        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        if(transform.position.x > X_Edge || transform.position.x < -X_Edge)
+        {
+            Debug.Log("cambio de sentido");
+            moveSpeed *= -1;
+        }
+    }
+
     #region SPAWN METHODS
 
     public void SpawnObject()
     {
         GetRandomObject();
-        GetRandomPosition();
-        Instantiate(_obj, _pos.position, Quaternion.identity);
+        //GetRandomPosition();
+        Instantiate(_obj, transform.position, Quaternion.identity);
     }
 
     private void GetRandomObject()
