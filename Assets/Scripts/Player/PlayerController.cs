@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +9,47 @@ public class PlayerController : MonoBehaviour
 
     public float Speed = 3f;
 
-    private void Update()
+    public Animator Anim;
+
+    public bool PositivePoleUp
     {
-        transform.Translate(InputManager.Instance.PlayerControls.Player.Movement.ReadValue<float>() * Vector2.right * Time.deltaTime);
+        get => _positivePoleUp;
+    }
+
+    private bool _positivePoleUp;
+
+    private float _moveDirection;
+
+    private void Awake()
+    {
+        _positivePoleUp = true;
+    }
+
+    private void Start()
+    {
+        InputManager.Instance.PlayerControls.Player.Rotate.performed += ctx =>
+        {
+            Rotate();
+        };
     }
 
 
+    private void Update()
+    {
+        CheckInputs();
+        transform.Translate( Speed * _moveDirection * Vector2.right * Time.deltaTime);
+    }
 
+    private void CheckInputs()
+    {
+        _moveDirection = InputManager.Instance.PlayerControls.Player.Movement.ReadValue<float>();
+
+        
+    }
+
+    private void Rotate()
+    {
+        _positivePoleUp = !_positivePoleUp;
+        Anim.SetTrigger("Rotate");
+    }
 }

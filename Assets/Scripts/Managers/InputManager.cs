@@ -15,6 +15,11 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+
         DontDestroyOnLoad(this);
 
         _playerControls = new GameActions();
