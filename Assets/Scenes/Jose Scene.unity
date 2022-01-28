@@ -141,14 +141,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &32841014
-AudioListener:
+--- !u!114 &32841014
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32841013}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &32841015
 Camera:
   m_ObjectHideFlags: 0
@@ -320,7 +326,7 @@ MonoBehaviour:
   - {fileID: 268881630}
   - {fileID: 947958789}
   moveSpeed: 5
-  X_Edge: 4.8
+  X_Edge: 4.5
   waitingTime: 2
   timeBetweenSpawns: 2
 --- !u!1 &947958788
