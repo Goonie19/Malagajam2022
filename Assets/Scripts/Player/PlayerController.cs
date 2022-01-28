@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
         get => _positivePoleUp;
     }
 
+    private Rigidbody2D _rb;
+
     private bool _positivePoleUp;
 
     private float _moveDirection;
@@ -23,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _positivePoleUp = true;
+        _rb = GetComponent<Rigidbody2D>();
         GameManager.Instance.PlayerReference = gameObject;
     }
 
@@ -38,7 +41,11 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         CheckInputs();
-        transform.Translate( Speed * _moveDirection * Vector2.right * Time.deltaTime);
+    }
+
+    private void FixedUpdate()
+    {
+        _rb.velocity = Vector2.right * Speed * _moveDirection;
     }
 
     private void CheckInputs()
@@ -52,5 +59,10 @@ public class PlayerController : MonoBehaviour
     {
         _positivePoleUp = !_positivePoleUp;
         Anim.SetTrigger("Rotate");
+    }
+
+    public void SubstractSpeed(float add)
+    {
+        Speed -= add;
     }
 }
