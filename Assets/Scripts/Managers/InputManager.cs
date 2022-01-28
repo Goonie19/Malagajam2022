@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
+
+    public static InputManager Instance;
+
     [SerializeField]
     public bool _keyBoardControls;
     private GameActions _playerControls;
