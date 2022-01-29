@@ -23,8 +23,8 @@ public class VolumeSlider : MonoBehaviour
 
     private void Awake()
     {
-        MusicBus = FMODUnity.RuntimeManager.GetBus("bus:/Master"); 
-        //SFXBus = FMODUnity.RuntimeManager.GetBus("bus:/Master/SFX");
+        MusicBus = FMODUnity.RuntimeManager.GetBus("bus:/Master/Music"); 
+        SFXBus = FMODUnity.RuntimeManager.GetBus("bus:/Master/SFX");
         //MasterBus = FMODUnity.RuntimeManager.GetBus("bus:/Master"); 
 
         //VolumeTestEvent = FMODUnity.RuntimeManager.CreateInstance(testRef);

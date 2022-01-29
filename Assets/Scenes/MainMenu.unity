@@ -672,7 +672,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 331484483}
+        m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
+        m_MethodName: SFXVolumeLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &331484483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,7 +1329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1557cab3ccef78847b1bf728a1550a7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3c8de36477ff38459e82badecb47e49, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7020,6 +7032,7 @@ GameObject:
   - component: {fileID: 1603358480}
   - component: {fileID: 1603358479}
   - component: {fileID: 1603358478}
+  - component: {fileID: 1603358481}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -7129,6 +7142,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603358476}
   m_CullTransparentMesh: 1
+--- !u!114 &1603358481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603358476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7703b87f4252df46b6018e999b9bc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navigationSound:
+    Guid:
+      Data1: -1464062357
+      Data2: 1075712877
+      Data3: -1365068111
+      Data4: -1762147519
+    Path: event:/SFX/Navegacion
+  selectSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1652372508
 GameObject:
   m_ObjectHideFlags: 0
