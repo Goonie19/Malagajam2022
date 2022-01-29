@@ -43,6 +43,12 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         CheckInputs();
+        CheckPosition();
+    }
+
+    private void CheckPosition()
+    {
+        Anim.SetFloat("PositionInCamera", Camera.main.WorldToScreenPoint(transform.position).x / Screen.width);
     }
 
     private void FixedUpdate()
