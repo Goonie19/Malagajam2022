@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
 
     public void SpawnAnotherBall()
     {
+        if (_magneticObject && _magneticObject.transform.parent != PlayerReference.transform) return;
+
         int r = UnityEngine.Random.Range(0, MagneticObject.Count);
         _magneticObject = Instantiate(MagneticObject[r], SpawnMagneticObject.position, MagneticObject[r].transform.rotation);
     }

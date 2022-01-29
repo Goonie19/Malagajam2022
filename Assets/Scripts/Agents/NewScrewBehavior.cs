@@ -37,6 +37,17 @@ public class NewScrewBehavior : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            DesactivatePhysics();
+            SetChildOfTheMagnet(collision.gameObject);
+            magnet = collision.gameObject;
+            this.enabled = false;
+        }
+    }
+
     private void MoveToTheMagnet(Transform target)
     {
         Vector3.MoveTowards(transform.position, target.position, moveSpeed * 100 * Time.deltaTime);

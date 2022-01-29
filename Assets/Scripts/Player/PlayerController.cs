@@ -72,17 +72,13 @@ public class PlayerController : MonoBehaviour
         Anim.SetTrigger("Rotate");
     }
 
-    public void SubstractSpeed()
-    {
-        
-        _actualSpeed = 1/_actualSpeed;
-    }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("MagneticObject"))
+        if(collision.gameObject.CompareTag("MagneticObject") || collision.gameObject.CompareTag("Player"))
         {
             _actualSpeed *= 0.8f;
-        }
+        } 
     }
 }
