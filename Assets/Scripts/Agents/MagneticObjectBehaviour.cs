@@ -90,6 +90,8 @@ public class MagneticObjectBehaviour : MonoBehaviour
         {
             _wallMagneticDirection = Vector2.zero;
         }
+        else if (collision.CompareTag("Edge"))
+            GameManager.Instance.OnGameEnded?.Invoke();
     }
 
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    public enum GameState{ InMenu, Playing}
+
+    private GameState _state = GameState.InMenu; 
+
+    public Action OnGameEnded;
 
     public PlayerController PlayerReference;
 
@@ -17,13 +24,13 @@ public class GameManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+
+        _state = GameState.InMenu;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void LoadScene(string scene)
     {
