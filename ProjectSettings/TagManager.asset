@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - MagneticObject
+  - Edge
   layers:
   - Default
   - TransparentFX
