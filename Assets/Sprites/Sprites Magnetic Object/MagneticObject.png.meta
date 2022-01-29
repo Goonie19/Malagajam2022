@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 40d9d3a5d2a20144590fc99827567db0
+guid: 0a9e5460822932b42b85d9bc495d9cf9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -490161278768444773
-    second: SpriteSheetPlayerRight_0
+      213: 7544252310658432612
+    second: MagneticObject_2
   - first:
-      213: 1165854476546589265
-    second: SpriteSheetPlayerRight_1
+      213: -1720994220565244271
+    second: MagneticObject_3
   - first:
-      213: 8251132003073710556
-    second: SpriteSheetPlayerRight_2
+      213: 6637869148409879363
+    second: MagneticObject_4
   - first:
-      213: 458375120065938078
-    second: SpriteSheetPlayerRight_3
+      213: -2083886153559188734
+    second: MagneticObject_6
   - first:
-      213: 1442214283980028609
-    second: SpriteSheetPlayerRight_4
+      213: 2059160724546202567
+    second: MagneticObject_7
   - first:
-      213: -2764847069919268658
-    second: SpriteSheetPlayerRight_5
-  - first:
-      213: -6497781907674630370
-    second: SpriteSheetPlayerRight_6
-  - first:
-      213: 6023412694349530910
-    second: SpriteSheetPlayerRight_7
+      213: -1500705224411569182
+    second: MagneticObject_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 341
+  spritePixelsToUnits: 309
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteSheetPlayerRight_0
+      name: MagneticObject_2
       rect:
         serializedVersion: 2
-        x: 45
-        y: 1318
-        width: 607
-        height: 652
+        x: 1565
+        y: 1475
+        width: 309
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9a0b58f9e89239f0800000000000000
-      internalID: -490161278768444773
+      spriteID: 46e37b0618192b860800000000000000
+      internalID: 7544252310658432612
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetPlayerRight_1
+      name: MagneticObject_3
       rect:
         serializedVersion: 2
-        x: 821
-        y: 1384
-        width: 458
-        height: 570
+        x: 122
+        y: 1519
+        width: 367
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152cb5e2872fd2010800000000000000
-      internalID: 1165854476546589265
+      spriteID: 19655b6efdccd18e0800000000000000
+      internalID: -1720994220565244271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetPlayerRight_2
+      name: MagneticObject_4
       rect:
         serializedVersion: 2
-        x: 1381
-        y: 1323
-        width: 666
-        height: 644
+        x: 905
+        y: 1523
+        width: 317
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd9d01627d8e18270800000000000000
-      internalID: 8251132003073710556
+      spriteID: 34bde7052d27e1c50800000000000000
+      internalID: 6637869148409879363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetPlayerRight_3
+      name: MagneticObject_6
       rect:
         serializedVersion: 2
-        x: 46
-        y: 822
-        width: 578
-        height: 429
+        x: 190
+        y: 766
+        width: 349
+        height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e92486d3eb97c5600800000000000000
-      internalID: 458375120065938078
+      spriteID: 20bdfb0959c8413e0800000000000000
+      internalID: -2083886153559188734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetPlayerRight_4
+      name: MagneticObject_7
       rect:
         serializedVersion: 2
-        x: 1443
-        y: 799
-        width: 571
-        height: 416
+        x: 800
+        y: 742
+        width: 438
+        height: 457
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cabf960046c30410800000000000000
-      internalID: 1442214283980028609
+      spriteID: 7cb2302e4cb939c10800000000000000
+      internalID: 2059160724546202567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheetPlayerRight_5
+      name: MagneticObject_8
       rect:
         serializedVersion: 2
-        x: 47
-        y: 22
-        width: 671
-        height: 626
+        x: 1575
+        y: 692
+        width: 274
+        height: 634
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,50 +264,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec0be2b1d3a41a9d0800000000000000
-      internalID: -2764847069919268658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetPlayerRight_6
-      rect:
-        serializedVersion: 2
-        x: 801
-        y: 86
-        width: 455
-        height: 556
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e17f71d18cd33d5a0800000000000000
-      internalID: -6497781907674630370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheetPlayerRight_7
-      rect:
-        serializedVersion: 2
-        x: 1405
-        y: 33
-        width: 596
-        height: 663
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e17484e9ee5779350800000000000000
-      internalID: 6023412694349530910
+      spriteID: 2e3206aac8c6c2be0800000000000000
+      internalID: -1500705224411569182
       vertices: []
       indices: 
       edges: []
