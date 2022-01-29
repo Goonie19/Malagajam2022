@@ -9,6 +9,12 @@ public class MagneticObjectBehaviour : MonoBehaviour
 
     public float WallMagneticForce = 10f;
 
+    public bool PositivePoleUp
+    {
+        get => _positivePoleUp;
+        set => _positivePoleUp = value;
+    }
+
     private bool _positivePoleUp = true;
 
     private Vector2 _magneticDirection;
@@ -30,12 +36,6 @@ public class MagneticObjectBehaviour : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     private void FixedUpdate()
