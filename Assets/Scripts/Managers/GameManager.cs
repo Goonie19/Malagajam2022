@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject PlayerPrefab;
 
+    private GameObject _magneticObject;
+
     private void Awake()
     {
         if (Instance == null)
@@ -33,7 +35,15 @@ public class GameManager : MonoBehaviour
     public void Play()
     {
         PlayerReference.enabled = true;
-        Instantiate(MagneticObject, SpawnMagneticObject.position, MagneticObject.transform.rotation);
+        _magneticObject = Instantiate(MagneticObject, SpawnMagneticObject.position, MagneticObject.transform.rotation);
+    }
+
+    public void StopGame()
+    {
+        ScoreManager.Instance.ResetScore();
+        PlayerReference.gameObject.SetActive(false);
+        _magneticObject.SetActive(false);
+
     }
 
     public void LoadScene(string scene)

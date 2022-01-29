@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager Instance;
+
     public int finalScore;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI finalScoreText;
@@ -12,6 +14,14 @@ public class ScoreManager : MonoBehaviour
     public GameObject finishPanel;
 
     private int _score = 0;
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     public void AddScore(int amount)
     {
