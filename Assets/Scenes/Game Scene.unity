@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '10
+  m_text: '0
 
 '
   m_isRightToLeft: 0
@@ -2311,7 +2311,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5.63
+  m_Radius: 6.27
 --- !u!4 &1056257378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2077197707138916836, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
@@ -3428,11 +3428,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
       propertyPath: TimeRange.x
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
       propertyPath: TimeRange.y
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
       propertyPath: MagneticObject
