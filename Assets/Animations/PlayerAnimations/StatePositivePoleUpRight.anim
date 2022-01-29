@@ -25,6 +25,13 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 1446994426259921014, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    attribute: m_Sprite
+    path: SpriteSheetPlayerLeftShadow_1
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
@@ -39,8 +46,16 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 2692279945
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: -6497781907674630370, guid: 40d9d3a5d2a20144590fc99827567db0, type: 3}
+    - {fileID: 1446994426259921014, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public Action OnGameEnded;
 
     public PlayerController PlayerReference;
+    public GameObject MagneticObject;
+    public Transform SpawnMagneticObject;
 
     public GameObject PlayerPrefab;
 
@@ -25,12 +27,14 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        DontDestroyOnLoad(gameObject);
-
         _state = GameState.InMenu;
     }
 
-    
+    public void Play()
+    {
+        PlayerReference.enabled = true;
+        Instantiate(MagneticObject, SpawnMagneticObject.position, MagneticObject.transform.rotation);
+    }
 
     public void LoadScene(string scene)
     {

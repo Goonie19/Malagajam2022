@@ -33,6 +33,21 @@ AnimationClip:
     path: 
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 1446994426259921014, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - time: 0.083333336
+      value: {fileID: 7718637363381233409, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - time: 0.16666667
+      value: {fileID: 3153747751480944299, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - time: 0.25
+      value: {fileID: 2639964403166989454, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - time: 0.33333334
+      value: {fileID: -9078827134899318081, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    attribute: m_Sprite
+    path: SpriteSheetPlayerLeftShadow_1
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
@@ -47,12 +62,24 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 2692279945
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 1165854476546589265, guid: 40d9d3a5d2a20144590fc99827567db0, type: 3}
     - {fileID: 8251132003073710556, guid: 40d9d3a5d2a20144590fc99827567db0, type: 3}
     - {fileID: 1442214283980028609, guid: 40d9d3a5d2a20144590fc99827567db0, type: 3}
     - {fileID: 6023412694349530910, guid: 40d9d3a5d2a20144590fc99827567db0, type: 3}
     - {fileID: -6497781907674630370, guid: 40d9d3a5d2a20144590fc99827567db0, type: 3}
+    - {fileID: 1446994426259921014, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - {fileID: 7718637363381233409, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - {fileID: 3153747751480944299, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - {fileID: 2639964403166989454, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
+    - {fileID: -9078827134899318081, guid: 56df60b27cdfeab4194e59c6f95fc46f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
