@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public Action OnGameEnded;
 
     public PlayerController PlayerReference;
-    public GameObject MagneticObject;
+    public List<GameObject> MagneticObject;
     public Transform SpawnMagneticObject;
 
     public GameObject PlayerPrefab;
@@ -35,7 +35,8 @@ public class GameManager : MonoBehaviour
     public void Play()
     {
         PlayerReference.enabled = true;
-        _magneticObject = Instantiate(MagneticObject, SpawnMagneticObject.position, MagneticObject.transform.rotation);
+        int r = UnityEngine.Random.Range(0, MagneticObject.Count);
+        _magneticObject = Instantiate(MagneticObject[r], SpawnMagneticObject.position, MagneticObject[r].transform.rotation);
     }
 
     public void StopGame()
