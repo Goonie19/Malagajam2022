@@ -57,8 +57,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3010014239048626488}
   - component: {fileID: 3010014239048626489}
+  - component: {fileID: 564426000866629961}
   - component: {fileID: 3010014239048626494}
-  - component: {fileID: 410667698}
   - component: {fileID: 4517573302634635598}
   m_Layer: 7
   m_Name: Clip
@@ -134,6 +134,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &564426000866629961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3010014239048626495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8987495250ba23c42a74623c2d08938a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
 --- !u!50 &3010014239048626494
 Rigidbody2D:
   serializedVersion: 4
@@ -149,25 +162,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0.1
+  m_GravityScale: 0.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &410667698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3010014239048626495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c6835e6e064a904db4fbcdb630282bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: 2
 --- !u!58 &4517573302634635598
 CircleCollider2D:
   m_ObjectHideFlags: 0
