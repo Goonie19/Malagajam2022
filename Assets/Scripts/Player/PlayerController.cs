@@ -21,12 +21,14 @@ public class PlayerController : MonoBehaviour
     private bool _positivePoleUp;
 
     private float _moveDirection;
+    private float _actualSpeed;
 
     private void Awake()
     {
         _positivePoleUp = true;
         _rb = GetComponent<Rigidbody2D>();
-        GameManager.Instance.PlayerReference = gameObject;
+        _actualSpeed = Speed;
+        GameManager.Instance.PlayerReference = this;
     }
 
     private void Start()
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.velocity = Vector2.right * Speed * _moveDirection;
+        _rb.velocity = Vector2.right * _actualSpeed * _moveDirection;
     }
 
     private void CheckInputs()
@@ -64,5 +66,13 @@ public class PlayerController : MonoBehaviour
     public void SubstractSpeed(float add)
     {
         Speed -= add;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("MagneticObject"))
+        {
+            _actualSpeed *= 0.8f;
+        }
     }
 }

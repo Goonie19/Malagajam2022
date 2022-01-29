@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public GameObject PlayerReference;
+    public PlayerController PlayerReference;
 
     public GameObject PlayerPrefab;
 
