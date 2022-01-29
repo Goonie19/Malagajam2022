@@ -368,7 +368,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192164082
 GameObject:
@@ -1253,7 +1253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &620963832
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1622,7 +1622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &877181033
 Transform:
   m_ObjectHideFlags: 0
@@ -2002,76 +2002,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953875438}
   m_CullTransparentMesh: 1
---- !u!1001 &969014585
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2339106157577341441, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_Name
-      value: MagneticObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341441, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341442, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: WallMagneticForce
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2339106157577341443, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
---- !u!1 &969014586 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2339106157577341441, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
-  m_PrefabInstance: {fileID: 969014585}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1044399662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,11 +2398,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197082485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.99, z: 0}
+  m_LocalPosition: {x: 0, y: 4.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1210301546
 GameObject:
@@ -3509,7 +3439,7 @@ PrefabInstance:
     - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
       propertyPath: MagneticObject
       value: 
-      objectReference: {fileID: 969014586}
+      objectReference: {fileID: 2339106157577341441, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
     - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
       propertyPath: PlayerReference
       value: 
