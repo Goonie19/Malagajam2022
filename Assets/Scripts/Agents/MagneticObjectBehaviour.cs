@@ -58,6 +58,13 @@ public class MagneticObjectBehaviour : MonoBehaviour
 
     }
 
+    public void Rotate()
+    {
+        GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
+
+        _positivePoleUp = !_positivePoleUp;
+    }
+
     private void CheckForces()
     {
         _actualMagneticForce = Mathf.Clamp(Vector2.Distance(GameManager.Instance.PlayerReference.transform.position, transform.position), 0, 1) * MaxMagneticForce;

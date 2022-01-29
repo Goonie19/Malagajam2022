@@ -8,11 +8,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public enum GameState{ InMenu, Playing}
-
-    private GameState _state = GameState.InMenu; 
-
     public Action OnGameEnded;
+
+    public Vector2 TimeRange;
 
     public PlayerController PlayerReference;
     public List<GameObject> MagneticObject;
@@ -22,14 +20,14 @@ public class GameManager : MonoBehaviour
 
     private GameObject _magneticObject;
 
+    Coroutine _coroutineForFlip;
+
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
-
-        _state = GameState.InMenu;
     }
 
     public void Play()
@@ -37,6 +35,20 @@ public class GameManager : MonoBehaviour
         PlayerReference.enabled = true;
         int r = UnityEngine.Random.Range(0, MagneticObject.Count);
         _magneticObject = Instantiate(MagneticObject[r], SpawnMagneticObject.position, MagneticObject[r].transform.rotation);
+
+        _coroutineForFlip = StartCoroutine(RotateMagnetOBJ());
+    }
+
+    IEnumerator RotateMagnetOBJ()
+    {
+        while(true)
+        {
+            float r = UnityEngine.Random.Range(TimeRange.x, TimeRange.y);
+
+            yield return new WaitForSeconds(r);
+
+            _magneticObject.GetComponent<MagneticObjectBehaviour>().Rotate();
+        }
     }
 
     public void StopGame()
@@ -44,6 +56,7 @@ public class GameManager : MonoBehaviour
         ScoreManager.Instance.ResetScore();
         PlayerReference.gameObject.SetActive(false);
         _magneticObject.SetActive(false);
+        StopCoroutine(_coroutineForFlip);
 
     }
 

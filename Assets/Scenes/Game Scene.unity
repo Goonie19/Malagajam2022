@@ -3445,6 +3445,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
+      propertyPath: TimeRange.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
+      propertyPath: TimeRange.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647808193836029732, guid: 104f50d1684f3a14894658cf23255eb8, type: 3}
       propertyPath: MagneticObject
       value: 
       objectReference: {fileID: 2339106157577341441, guid: e6dc1903ab918934fa0ab8d768cdbdd4, type: 3}
