@@ -10,11 +10,13 @@ public class NewScrewBehaviour : MonoBehaviour
     private GameObject magnet;
     private Rigidbody2D _rb;
     private CircleCollider2D _col;
+    private CircleCollider2D _col2;
 
     private void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _col = gameObject.GetComponent<CircleCollider2D>();
+        _col2 = gameObject.GetComponentInChildren<CircleCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,7 +46,8 @@ public class NewScrewBehaviour : MonoBehaviour
 
     private void DesactivatePhysics()
     {
-        _rb.bodyType = RigidbodyType2D.Static;
+        _rb.gravityScale = 0f;
         _col.enabled = false;
+        _col2.enabled = false;
     }
 }
