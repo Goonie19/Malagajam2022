@@ -143,10 +143,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3010014239048626495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8987495250ba23c42a74623c2d08938a, type: 3}
+  m_Script: {fileID: 11500000, guid: 93697639d306b2a418e2787ec6b6caa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
+  points: 5
 --- !u!50 &3010014239048626494
 Rigidbody2D:
   serializedVersion: 4

@@ -32,11 +32,18 @@ public class GameManager : MonoBehaviour
 
     public void Play()
     {
+        if (_coroutineForFlip != null)
+            StopCoroutine(_coroutineForFlip);
         PlayerReference.enabled = true;
-        int r = UnityEngine.Random.Range(0, MagneticObject.Count);
-        _magneticObject = Instantiate(MagneticObject[r], SpawnMagneticObject.position, MagneticObject[r].transform.rotation);
+        SpawnAnotherBall();
 
         _coroutineForFlip = StartCoroutine(RotateMagnetOBJ());
+    }
+
+    public void SpawnAnotherBall()
+    {
+        int r = UnityEngine.Random.Range(0, MagneticObject.Count);
+        _magneticObject = Instantiate(MagneticObject[r], SpawnMagneticObject.position, MagneticObject[r].transform.rotation);
     }
 
     IEnumerator RotateMagnetOBJ()

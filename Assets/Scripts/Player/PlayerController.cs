@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
 
     public Animator Anim;
 
+    public Transform StuckPos;
+    public Transform StuckPos2;
+
     public bool PositivePoleUp
     {
         get => _positivePoleUp;
@@ -69,9 +72,10 @@ public class PlayerController : MonoBehaviour
         Anim.SetTrigger("Rotate");
     }
 
-    public void SubstractSpeed(float add)
+    public void SubstractSpeed()
     {
-        Speed -= add;
+        
+        _actualSpeed = 1/_actualSpeed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

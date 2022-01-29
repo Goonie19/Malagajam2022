@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewScrewBehaviour : MonoBehaviour
+public class NewScrewBehavior : MonoBehaviour
 {
     public float moveSpeed;
+    public int points;
 
     private bool _isAtracted = false;
     private GameObject magnet;
@@ -25,6 +26,8 @@ public class NewScrewBehaviour : MonoBehaviour
         {
             DesactivatePhysics();
             SetChildOfTheMagnet(collision.gameObject);
+            ScoreManager.Instance.AddScore(points);
+
             //_isAtracted = true;
             magnet = collision.gameObject;
         }

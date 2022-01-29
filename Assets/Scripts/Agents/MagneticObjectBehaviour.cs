@@ -25,6 +25,8 @@ public class MagneticObjectBehaviour : MonoBehaviour
     private Vector2 _wallMagneticDirection;
 
     private Rigidbody2D _rb;
+    private Collider2D _col;
+
 
     private void OnDrawGizmos()
     {
@@ -38,6 +40,7 @@ public class MagneticObjectBehaviour : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _col = gameObject.GetComponent<Collider2D>();
     }
 
     private void FixedUpdate()
@@ -88,6 +91,17 @@ public class MagneticObjectBehaviour : MonoBehaviour
         }
     }
 
+    private void SetChildOfTheMagnet(GameObject magnet)
+    {
+        gameObject.transform.SetParent(magnet.transform);
+    }
+
+    private void DesactivatePhysics()
+    {
+        Destroy(_rb);
+        _col.enabled = false;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Wall"))
@@ -114,5 +128,21 @@ public class MagneticObjectBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Edge"))
             GameManager.Instance.StopGame();
+        else if (collision.gameObject.CompareTag("Player")) {
+            DesactivatePhysics();
+            SetChildOfTheMagnet(collision.gameObject);
+            if(UnityEngine.Random.Range(0,1) == 0)
+                transform.position = GameManager.Instance.PlayerReference.StuckPos.position;
+            else
+                transform.position = GameManager.Instance.PlayerReference.StuckPos2.position;
+            foreach (Transform g in GetComponentInChildren<Transform>())
+                Destroy(g.gameObject);
+
+            GameManager.Instance.SpawnAnotherBall();
+            this.enabled = false;
+
+        }
     }
+
+    
 }
