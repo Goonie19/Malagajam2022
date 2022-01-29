@@ -460,6 +460,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 978940681273501297, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3010014239048626488, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -507,6 +511,10 @@ PrefabInstance:
     - target: {fileID: 3010014239048626495, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
       propertyPath: m_Name
       value: tornillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010014239048626495, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
