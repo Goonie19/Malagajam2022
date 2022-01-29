@@ -20,6 +20,8 @@ public class MagneticObjectBehaviour : MonoBehaviour
     private Vector2 _magneticDirection;
     private float _actualMagneticForce;
 
+    private bool _playerCanRepel;
+
     private Vector2 _wallMagneticDirection;
 
     private Rigidbody2D _rb;
@@ -40,6 +42,9 @@ public class MagneticObjectBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (!_playerCanRepel)
+            _magneticDirection = Vector2.zero;
 
         _rb.AddForce((_magneticDirection * _actualMagneticForce) + (_wallMagneticDirection * WallMagneticForce));
     }
@@ -78,10 +83,13 @@ public class MagneticObjectBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Wall"))
+        if (collision.CompareTag("Wall"))
         {
             _wallMagneticDirection += collision.GetComponent<WallMagneticBehaviour>().GetWallRepellDirection();
         }
+        else if (collision.CompareTag("Player"))
+            _playerCanRepel = true;
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -90,7 +98,9 @@ public class MagneticObjectBehaviour : MonoBehaviour
         {
             _wallMagneticDirection = Vector2.zero;
         }
-       
+        else if (collision.CompareTag("Player"))
+            _playerCanRepel = false;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
