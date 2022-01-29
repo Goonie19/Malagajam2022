@@ -590,6 +590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tornillo
       objectReference: {fileID: 0}
+    - target: {fileID: 3010014239048626495, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d9abbf701cc7b46a7295912cac64fc, type: 3}
 --- !u!1 &259007731
