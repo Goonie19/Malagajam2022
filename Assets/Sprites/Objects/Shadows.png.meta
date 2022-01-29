@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 9a0f6879c23d6554eabdcf4c2ba6ef15
+guid: e12361b717e9e36459918389e759bffa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8693361126291806186
-    second: Post-it amarillo_0
+      213: -8632807521500629345
+    second: Shadows_0
   - first:
-      213: -1852089577343667595
-    second: Post-it amarillo_1
+      213: 814388298513811021
+    second: Shadows_1
   - first:
-      213: 291449353739150513
-    second: Post-it amarillo_2
+      213: -8966324891129881086
+    second: Shadows_8
   - first:
-      213: 8997665319680984967
-    second: Post-it amarillo_3
+      213: 7146294975149136044
+    second: Shadows_10
+  - first:
+      213: -2905913306363194374
+    second: Shadows_28
+  - first:
+      213: 2412229616173155236
+    second: Shadows_33
+  - first:
+      213: 8486534068823724689
+    second: Shadows_34
+  - first:
+      213: -8514561272893185378
+    second: Shadows_42
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Post-it amarillo_0
+      name: Shadows_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 884
-        width: 938
-        height: 1077
+        x: 150
+        y: 1423
+        width: 275
+        height: 593
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae710dc82e505a870800000000000000
-      internalID: 8693361126291806186
+      spriteID: f9672aa3c4b123880800000000000000
+      internalID: -8632807521500629345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Post-it amarillo_1
+      name: Shadows_1
       rect:
         serializedVersion: 2
-        x: 1286
-        y: 1595
-        width: 748
-        height: 433
+        x: 798
+        y: 1553
+        width: 464
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5723a3a975e0c46e0800000000000000
-      internalID: -1852089577343667595
+      spriteID: d46862ab7d94d4b00800000000000000
+      internalID: 814388298513811021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Post-it amarillo_2
+      name: Shadows_8
       rect:
         serializedVersion: 2
-        x: 61
-        y: 90
-        width: 895
-        height: 623
+        x: 1565
+        y: 1553
+        width: 304
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b4a3af94af6b0400800000000000000
-      internalID: 291449353739150513
+      spriteID: 20ed5736407319380800000000000000
+      internalID: -8966324891129881086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Post-it amarillo_3
+      name: Shadows_10
       rect:
         serializedVersion: 2
-        x: 973
-        y: 11
-        width: 1069
-        height: 1130
+        x: 1864
+        y: 1787
+        width: 4
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +204,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 787cf63cfe02edc70800000000000000
-      internalID: 8997665319680984967
+      spriteID: ca85cedca6dbc2360800000000000000
+      internalID: 7146294975149136044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_28
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 840
+        width: 335
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3142a7e3f1ca7d0800000000000000
+      internalID: -2905913306363194374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_33
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 765
+        width: 494
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a38dac2e06f97120800000000000000
+      internalID: 2412229616173155236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_34
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 803
+        width: 515
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1921d72a5c936c570800000000000000
+      internalID: 8486534068823724689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shadows_42
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 170
+        width: 302
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9267e662a336d980800000000000000
+      internalID: -8514561272893185378
       vertices: []
       indices: 
       edges: []
