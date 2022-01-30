@@ -70,6 +70,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxMagneticForce: 12
   WallMagneticForce: 20.12
+  spin:
+    Guid:
+      Data1: 888516719
+      Data2: 1137827423
+      Data3: 1858673807
+      Data4: 629934986
+    Path: event:/SFX/BallSpin
 --- !u!212 &2339106157577341445
 SpriteRenderer:
   m_ObjectHideFlags: 0

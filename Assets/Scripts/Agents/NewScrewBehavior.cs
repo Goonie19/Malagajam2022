@@ -7,7 +7,6 @@ public class NewScrewBehavior : MonoBehaviour
     public float moveSpeed;
     public int points;
 
-    private bool _isAtracted = false;
     private GameObject magnet;
     private Rigidbody2D _rb;
     private CircleCollider2D _col;

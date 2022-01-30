@@ -9,6 +9,8 @@ public class MagneticObjectBehaviour : MonoBehaviour
 
     public float WallMagneticForce = 10f;
 
+    public FMODUnity.EventReference spin;
+
     public bool PositivePoleUp
     {
         get => _positivePoleUp;
@@ -64,7 +66,7 @@ public class MagneticObjectBehaviour : MonoBehaviour
     public void Rotate()
     {
         GetComponent<SpriteRenderer>().flipY = !GetComponent<SpriteRenderer>().flipY;
-
+        FMODUnity.RuntimeManager.PlayOneShot(spin);
         _positivePoleUp = !_positivePoleUp;
     }
 

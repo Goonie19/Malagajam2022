@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject PlayerPrefab;
 
+    public FMODUnity.EventReference gameOverSound;
+
     private GameObject _magneticObject;
 
     Coroutine _coroutineForFlip;
@@ -63,6 +65,7 @@ public class GameManager : MonoBehaviour
     public void StopGame()
     {
         ScoreManager.Instance.ResetScore();
+        FMODUnity.RuntimeManager.PlayOneShot(gameOverSound);
         PlayerReference.gameObject.SetActive(false);
         _magneticObject.SetActive(false);
         StopCoroutine(_coroutineForFlip);
