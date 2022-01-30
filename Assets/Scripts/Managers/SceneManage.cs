@@ -7,11 +7,13 @@ public class SceneManage : MonoBehaviour
 {
     public void LoadScene(string scene)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }
 
     public void LoadSceneInt(int index)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(index);
     }
 

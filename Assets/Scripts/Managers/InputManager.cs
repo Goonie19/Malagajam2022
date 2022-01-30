@@ -20,7 +20,6 @@ public class InputManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        DontDestroyOnLoad(this);
 
         _playerControls = new GameActions();
         _playerControls.Enable();
