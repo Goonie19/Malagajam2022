@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{6df0d718-5206-4975-88bf-d365f0c269c9}">
+	<object class="AudioFile" id="{58d41361-e4d1-45de-b898-b2bdeffd6742}">
 		<property name="assetPath">
-			<value>Select.wav</value>
+			<value>metal adherido iman.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.29233560090702948</value>
+			<value>1.4375056689342403</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a5eced30-52b0-48a3-8666-e3f444ce265e}</destination>

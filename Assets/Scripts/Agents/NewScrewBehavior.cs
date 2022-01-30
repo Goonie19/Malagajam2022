@@ -13,6 +13,10 @@ public class NewScrewBehavior : MonoBehaviour
     private CircleCollider2D _col;
     private CircleCollider2D _col2;
 
+    public FMODUnity.EventReference addObjectToBall;
+    public FMODUnity.EventReference addObjectToMagnet;
+
+
     private void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
@@ -27,7 +31,7 @@ public class NewScrewBehavior : MonoBehaviour
             DesactivatePhysics();
             SetChildOfTheMagnet(collision.gameObject);
             ScoreManager.Instance.AddScore(points);
-
+            FMODUnity.RuntimeManager.PlayOneShot(addObjectToBall);
             //_isAtracted = true;
             magnet = collision.gameObject;
         }
@@ -42,6 +46,7 @@ public class NewScrewBehavior : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             DesactivatePhysics();
+            FMODUnity.RuntimeManager.PlayOneShot(addObjectToMagnet);
             SetChildOfTheMagnet(collision.gameObject);
             magnet = collision.gameObject;
             this.enabled = false;

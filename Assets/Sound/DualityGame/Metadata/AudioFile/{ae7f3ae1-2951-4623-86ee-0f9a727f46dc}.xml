@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ae7f3ae1-2951-4623-86ee-0f9a727f46dc}">
+		<property name="assetPath">
+			<value>spin.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.3125170068027211</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a5eced30-52b0-48a3-8666-e3f444ce265e}</destination>
+		</relationship>
+	</object>
+</objects>

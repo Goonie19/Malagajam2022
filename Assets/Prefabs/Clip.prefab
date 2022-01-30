@@ -148,6 +148,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   points: 2
+  addObjectToBall:
+    Guid:
+      Data1: 1164812268
+      Data2: 1143040722
+      Data3: 378521775
+      Data4: 1797129781
+    Path: event:/SFX/AddObjectBall
+  addObjectToMagnet:
+    Guid:
+      Data1: -1903524615
+      Data2: 1289565684
+      Data3: 1094388871
+      Data4: 509574076
+    Path: event:/SFX/AddObjectMagnet
 --- !u!50 &3010014239048626494
 Rigidbody2D:
   serializedVersion: 4

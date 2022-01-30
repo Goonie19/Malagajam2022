@@ -680,6 +680,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &314240287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314240289}
+  - component: {fileID: 314240288}
+  m_Layer: 0
+  m_Name: PauseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &314240288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314240287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9409d005cabde67409407c216a0c130f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 1952931880}
+  _playerAction: {fileID: 0}
+--- !u!4 &314240289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314240287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 731.7752, y: 520.6661, z: -46.93431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &389283702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1637,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 314240288}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &818533579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,6 +2290,26 @@ PrefabInstance:
     - target: {fileID: 2077197707138916858, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077197707138916859, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
+      propertyPath: spinSound.Path
+      value: event:/SFX/Spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077197707138916859, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
+      propertyPath: spinSound.Guid.Data1
+      value: -497862818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077197707138916859, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
+      propertyPath: spinSound.Guid.Data2
+      value: 1158810470
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077197707138916859, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
+      propertyPath: spinSound.Guid.Data3
+      value: 1852717482
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077197707138916859, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}
+      propertyPath: spinSound.Guid.Data4
+      value: -1329571488
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d17e682d1f4e4cd4080f681b179a614c, type: 3}

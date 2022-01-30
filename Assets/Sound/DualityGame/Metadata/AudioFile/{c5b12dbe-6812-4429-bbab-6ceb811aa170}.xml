@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{29148192-7d91-43dc-b242-e22183fbb46c}">
+	<object class="AudioFile" id="{c5b12dbe-6812-4429-bbab-6ceb811aa170}">
 		<property name="assetPath">
-			<value>PosIt sound.wav</value>
+			<value>paper sound hard.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.28056689342403629</value>
+			<value>0.62501133786848073</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a5eced30-52b0-48a3-8666-e3f444ce265e}</destination>

@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public Transform StuckPos;
     public Transform StuckPos2;
 
+    public FMODUnity.EventReference spinSound;
+
     public bool PositivePoleUp
     {
         get => _positivePoleUp;
@@ -70,6 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         _positivePoleUp = !_positivePoleUp;
         Anim.SetTrigger("Rotate");
+        FMODUnity.RuntimeManager.PlayOneShot(spinSound);
     }
 
     

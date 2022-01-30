@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{bdfe88e2-fc11-4cc5-9227-a369f118a62e}">
+		<property name="assetPath">
+			<value>bola adherida iman.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a5eced30-52b0-48a3-8666-e3f444ce265e}</destination>
+		</relationship>
+	</object>
+</objects>
