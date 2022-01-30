@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     public FMODUnity.EventReference spinSound;
 
+    private ParticleSystem _particles;
+
     public bool PositivePoleUp
     {
         get => _positivePoleUp;
@@ -34,6 +36,7 @@ public class PlayerController : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _actualSpeed = Speed;
         GameManager.Instance.PlayerReference = this;
+        _particles = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Start()
@@ -82,6 +85,7 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.CompareTag("MagneticObject") || collision.gameObject.CompareTag("Player"))
         {
             _actualSpeed *= 0.8f;
+            _particles.Play();
         } 
     }
 }

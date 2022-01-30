@@ -16,18 +16,22 @@ public class NewScrewBehavior : MonoBehaviour
     public FMODUnity.EventReference addObjectToBall;
     public FMODUnity.EventReference addObjectToMagnet;
 
+    private ParticleSystem _particles;
+
 
     private void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _col = gameObject.GetComponent<CircleCollider2D>();
         _col2 = gameObject.GetComponentInChildren<CircleCollider2D>();
+        _particles = GetComponentInChildren<ParticleSystem>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("MagneticObject"))
         {
+            _particles.Play();
             DesactivatePhysics();
             SetChildOfTheMagnet(collision.gameObject);
             ScoreManager.Instance.AddScore(points);

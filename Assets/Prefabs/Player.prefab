@@ -96,6 +96,7 @@ Transform:
   - {fileID: 2476898285825013286}
   - {fileID: 913437364}
   - {fileID: 426822566}
+  - {fileID: 655364940982972708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -115,6 +116,13 @@ MonoBehaviour:
   Anim: {fileID: 2077197707138916838}
   StuckPos: {fileID: 913437364}
   StuckPos2: {fileID: 426822566}
+  spinSound:
+    Guid:
+      Data1: -497862818
+      Data2: 1158810470
+      Data3: 1852717482
+      Data4: -1329571488
+    Path: event:/SFX/Spin
 --- !u!95 &2077197707138916838
 Animator:
   serializedVersion: 3
@@ -330,3 +338,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &7597924223083498958
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2077197707138916836}
+    m_Modifications:
+    - target: {fileID: 6947203894111026409, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_Name
+      value: Chispitas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12694395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1868857
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+--- !u!4 &655364940982972708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6947203894111026410, guid: d2f0614d101beed40b769b6f06d50348, type: 3}
+  m_PrefabInstance: {fileID: 7597924223083498958}
+  m_PrefabAsset: {fileID: 0}

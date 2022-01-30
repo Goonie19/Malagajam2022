@@ -13,7 +13,7 @@ public class VolumeSlider : MonoBehaviour
     private FMOD.Studio.Bus SFXBus;
     private FMOD.Studio.Bus MasterBus;
 
-    private float MusicVolume = 0.5f;
+    //private float MusicVolume = 0.5f;
     private float SFXVolume = 0.5f;
     //private float MasterVolume = 1f;
 
